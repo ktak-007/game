@@ -9,13 +9,29 @@ It became interesting for me to show the same elegant program in Haskell.
 
 And here it is:
 ```
-farewell $ attempts 5 n $ verbose $ diff n guess
+run = farewell $ attempts 5 n $ verbose $ diff n guess
 ```
 or, if you prefer backward style:
 ```
-diff n guess & verbose & attempts 5 n & farewell
+run = diff n guess & verbose & attempts 5 n & farewell
 ```
-These program codes you can found in func1.hs and func2.hs.
+or you can write the code vertically:
+```
+run = farewell
+    $ attempts 5 n
+    $ verbose
+    $ diff n guess
+```
+and
+```
+run = diff n guess
+    & verbose
+    & attempts 5 n
+    & farewell
+```
+respectively.
+
+These program codes you can be found in func1.hs and func2.hs.
 
 Of course I wrote a la Basic lang example in Haskell - you can see it in basic.hs file.
 
