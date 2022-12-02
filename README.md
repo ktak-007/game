@@ -1,7 +1,7 @@
 # Game
 Functional example versus one interesting OOP idea
 
-The idea was taken from the speech https://youtu.be/75U9eefFYoU by @yegor256 - the simple game was demonstrated here in imperative style at first (langs Basic, C and Java were used to demonstrate), and than the "correct" OOP style was demonstrated:
+The idea was taken from the speech https://youtu.be/75U9eefFYoU by [@yegor256](https://github.com/yegor256) - the simple game was demonstrated here in imperative style at first (langs Basic, C and Java were used to demonstrate), and than the "correct" OOP style was demonstrated:
 
 ![OOP example](/oop.png)
 
@@ -39,6 +39,6 @@ These files are able to run as scripts:
 ```
 stack func1.hs
 stack func2.hs
-stack func3.hs
+stack basic.hs
 ```
 WARNING: The Haskell compiler with libs will be downloaded! Several Gigabytes of disk space required.
